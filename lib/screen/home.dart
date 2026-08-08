@@ -5,53 +5,16 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Row(
     return Column(
-      // mainAxisAlignment: MainAxisAlignment.start,
-      // mainAxisAlignment: MainAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.end,
-      // mainAxisAlignment: MainAxisAlignment.spaceAround,
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Container(
-          color: Colors.redAccent,
-          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: const Text(
-            'Hello World',
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.greenAccent,
-          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: const Text(
-            'Hello World',
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
-        ),
-        Container(
-          color: Colors.blueAccent,
-          padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),
-          child: const Text(
-            'Hello World',
-            style: TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-            ),
-          ),
+        Image.asset('assets/images/flower.jpg', width: 200, height: 200),
+        SizedBox(height: 20),
+        Image.network(
+          'https://hips.hearstapps.com/hmg-prod/images/gettyimages-2165950545-69600af8c9b0d.jpg',
+          width: 200,
+          height: 200,
         ),
       ],
     );
