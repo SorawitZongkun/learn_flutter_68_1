@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 // import 'screen/home.dart';
-import 'package:learn_flutter_68_1/screen/home.dart';
+// import 'package:learn_flutter_68_1/screen/home.dart';
+import 'package:learn_flutter_68_1/screen/item.dart';
 
 void main() {
   // runApp(const MyApp());
@@ -19,7 +20,8 @@ void main() {
           centerTitle: true,
         ),
         // body: Center(child: Text('Hello World')),
-        body: Home(),
+        // body: Home(),
+        body: Item(),
       ),
     ),
   );
